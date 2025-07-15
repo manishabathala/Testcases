@@ -1,0 +1,146 @@
+Test Case ID,Test Scenario,Test Case Title,Pre-Conditions,Test Steps,Test Data,Expected Result,Actual Result,status
+TC_RF_01,Register Functionality,"Validate Registering an Account
+by  providing all the fields","Open the Application
+(https://websites.co.in/) in any browser","1.Click on 'Get Started For Free' button
+2.Enter new Account details into the 
+fields(Full Name,Email,Phone number,
+Password)
+3.Click on 'Signup For Free' button","Full Name - Xyz Abc
+Email - bmc136912@gmail.com
+Phone Number - 8888888888
+Password - Xyz1234#","User should be taken to the verification page and 
+user should get the OTP and Verification link to 
+his/her email","User taken to the verification page and  got the 
+OTP and Verification link to email",pass
+TC_RF_02,Register Functionality,"Validate proper messages are 
+displayed for the mandatory fields,when you don't 
+provide input to fields in the 'Register Account' page 
+and click on signup for free button  ","Open the Application 
+(https://websites.co.in/) in any browser","1.Click on 'Get Started For Free' button
+",Not Applicable,Proper warning should be displayed for fields,No proper warning message,fail
+TC_RF_03,Register Functionality,"Validate Registering an Account
+by  providing the existing account details
+(i.e. existing email address)","Open the Application 
+(https://websites.co.in/) in any browser","1.Click on 'Get Started For Free' button
+2.Enter new Account details into the 
+fields(Full Name,Email,Phone number,
+Password)
+3.Click on 'Signup For Free' button","Full Name - Abc Xyz
+Email - bmm136912@gmail.com
+Phone Number - 7777777788
+Password - Abc1234#","Warning messsage should be displayed like - 
+The email has already been taken","Warning message-The email has already been 
+taken",pass
+TC_RF_04,Register Functionality,"Validate Registering an Account by providing the 
+existing account details
+(i.e. existing phonenumber)","Open the Application 
+(https://websites.co.in/) in any browser","1.Click on 'Get Started For Free' button
+2.Enter new Account details into the 
+fields(Full Name,Email,Phone number,
+Password)
+3.Click on 'Signup For Free' button","Full Name - Abc Xyz
+Email - bmm136912@gmail.com
+Phone Number - 7777777788
+Password - Abc1234#","Warning messsage should be displayed like - 
+The phone number has already been taken","
+Warning message-The phone number has already
+been taken
+",pass
+TC_RF_05,Register Functionality,"Validate Registering an Account by providing an
+invalid email address into the Email field","Open the Application 
+(https://websites.co.in/) in any browser","1.Click on 'Get Started For Free' button
+2.Enter email into the email field","invalid email - 
+bmc136912
+bmc136912@
+bmc136912@gmail","Proper warning message to provide valid email 
+address should be displayed",Warning message-Please enter a valid email address,pass
+TC_RF_06,Register Functionality,"Validate Registering an Account by providing an 
+invalid phone number","Open the Application 
+(https://websites.co.in/) in any browser","1.Click on 'Get Started For Free' button
+2.Enter phone number into phone 
+number field","Invalid Phone Number - 
+76543
+1111
+abcde",Proper Warning message should be displayed,"Warning message-Please enter a valid phone 
+number",pass
+TC_RF_07,Register Functionality,"Validate Registering an Account by using the
+Keyboard keys","Open the Application 
+(https://websites.co.in/) in any browser","1.Click on 'Get Started For Free' button
+2.Enter new account details into all the 
+fields(full name,email,phone number, 
+password)by using keyboard keys
+(Tab,spacebar and enter)","Full Name - Xyz Abc
+Email - bmc136912@gmail.com
+Phone Number - 8888888888
+Password - Xyz1234#","User taken to the verification page and got the 
+OTP and Verification link to email","User taken to the verification page and got the 
+OTP and Verification link to email",pass
+TC_RF_08,Register Functionality,"Validate all the fields in the Register Account page 
+have the proper placeholders","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"Proper placeholder texts should be displayed in 
+these fields",proper placeholders are displayed,pass
+TC_RF_09,Register Functionality,"Validate all the mandatory fields in the Register 
+Account page are marked with Red color * symbol","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"All the mandatory fields should be marked with red 
+color * symbol",No red color * symbol for the mandatory fields,fail
+TC_RF_10,Register Functionality,"Validate whether the mandatory fields in the 
+Register Account page are accepting only spaces","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"Warning message should be displayed for these 
+mandatory fields",Proper warning messages are displayed,pass
+TC_RF_11,Register Functionality,"Validate whether the password field in the 
+Register Account page are following password 
+complexity standards","Open the Application 
+(https://websites.co.in/) in any browser","1.Click on 'Get Started For Free' button
+2.Enter password into password field",12345,"Warning message should be displayed for following 
+password complexity standards",Warning message is displayed,pass
+TC_RF_12,Register Functionality,"Validate whether the leading and trailing spaces 
+entered into the Register Account fields are 
+trimmed","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"The leading and trailing spaces entered into these 
+fields should automatically get trimmed on successful 
+account creation","The leading and trailing spaces entered into these 
+fields are automatically get trimmed on successful 
+account creation",pass
+TC_RF_13,Register Functionality,"Validate the password text entered into the 
+password field is toggled to hide its visibility","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"Password text entered into 'Password' field need to 
+be toggled to hide its visibility(It should be hidden 
+by displaying * or . symbols)",password is toggled to hide its visibility,pass
+TC_RF_14,Register Functionality,"Validate navigating to other pages using the links 
+provided on the Register Account page","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"User should be navigated to the respective pages 
+without any problems",User is successfully navigated to other pages,pass
+TC_RF_15,Register Functionality,"Validate the Page Heading,Page URL,Page Title 
+of Register Account page","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"Proper Page Heading,Page URL and Page Title 
+should be displayed","It has proper page heading,page URL,page Title",pass
+TC_RF_16,Register Functionality,Validate the UI of the Register Account page,"Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"Proper and good UI should be displayed on the 
+'Register Account' page",Proper UI is displayed,pass
+TC_RF_17,Register Functionality,Validate character limit for Full Name field,"Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"Full Name field should restrict input to a reasonable 
+limit","Full Name field is restrict input to a reasonable 
+limit of 30 characters",pass
+TC_RF_18,Register Functionality,Validate character limit for Mobile Number field,"Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"Phone Number field should restrict input to a 
+reasonable limit","Phone Number field is restrict input to a 
+reasonable limit of 16 but it should be 10",fail
+TC_RF_19,Register Functionality,"Validate OTP and Verification link are sent to the 
+Registered Email","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,User should receive an OTP and Verification Link,User received an OTP and Verification Link,pass
+TC_RF_20,Register Functionality,Validate No character limit for Email field,"Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,"Long Email - 
+bmcxxxxxxxxxxxxxxx@gmail.com","Email field should accept the input if it meets valid 
+email format","Email field accepted the input if it meets valid 
+email format",pass
+TC_RF_21,Register Functionality,Validate country code field behavior,"Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,Selected country code should be reflected correctly,Selected country code is reflected correctly,pass
+TC_RF_22,Register Functionality,"Validate eye icon toggle functionality for 
+password field","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"Password should toggle between visible and hidden 
+states",password is toggled between visible and hidden,pass
+TC_RF_23,Register Functionality,"Validate alternative signup options
+(Google,Facebook) are working","Open the Application 
+(https://websites.co.in/) in any browser",1.Click on 'Get Started For Free' button,Not Applicable,"User should be redirected to the respective 
+authentication page","User is successfully signup using other signup 
+options",pass
