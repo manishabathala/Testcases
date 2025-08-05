@@ -60,7 +60,7 @@ supported Browser",-,Not Applicable,"Proper place holder text should be displaye
 inside the 'User ID' and 'Password' text fields","Proper place holder text displayed 
 inside the 'User ID' and 'Password' text 
 fields",pass
-TC_LF_010,Login Functionality,"Validate the number of unsucessful login 
+TC_LF_009,Login Functionality,"Validate the number of unsucessful login 
 attemps","Open the Application URL 
 (https://dev-dash.janitri.in) in any 
 supported Browser","1. Enter invalid User ID into the User ID field
@@ -72,7 +72,7 @@ password:xxxxxxxx","Warning message with the text ' Warning:
 Your account has exceeded allowed number 
 of login attempts. Please try again after some 
 time",-,-
-TC_LF_011,Login Functionality,Validate the text into the Password field is toggled to hide its visibility,"Open the Application URL 
+TC_LF_010,Login Functionality,Validate the text into the Password field is toggled to hide its visibility,"Open the Application URL 
 (https://dev-dash.janitri.in) in any 
 supported Browser",Enter any text into the 'Password' field,passwod:xxxxxxxxxx,"Text entered into the Password field should be 
 toggled to hide its visibility (i.e. Instead of 
@@ -80,7 +80,7 @@ entered characters getting dispalyed, the
 Password field should show either * or . 
 Symbols)","Text entered into the Password field 
 toggled to hide its visibility",pass
-TC_LF_012,Login Functionality,"Validate the copying of the text entered 
+TC_LF_011,Login Functionality,"Validate the copying of the text entered 
 into the Password field","Open the Application URL 
 (https://dev-dash.janitri.in) in any 
 supported Browser","1. Enter any text into the 'Password' field
@@ -91,7 +91,7 @@ and press (Ctrl+C) shorcut for copying",passwod:xxxxxxxxxx,"1. Copy option in th
 be disabled
 2. Password text should not be copied","Copy option in the Right click menu 
 disabled",pass
-TC_LF_013,Login Functionality," 
+TC_LF_012,Login Functionality," 
  	
 Validate the Password is not visible in the 
 Page Source","Open the Application URL 
@@ -102,7 +102,7 @@ supported Browser","1. Enter any text into the 'Password' field
 text field",Not Applicable,"Password text should not be visible in the 
 Page source","Password text visible in the 
 Page source",fail
-TC_LF_016,Login Functionality," 
+TC_LF_013,Login Functionality," 
  	
 Validate timeout of the Login Session","Open the Application URL 
 (https://dev-dash.janitri.in) in any 
@@ -114,7 +114,7 @@ anything on the Application
 5. Perform any action on the Application",Not Applicable,"User should get automatically logged out 
 with a proper message stating your session 
 got expired",-,-
-TC_LF_017,Login Functionality," 
+TC_LF_014,Login Functionality," 
          
 Validate the Page Heading, 
 Page Title and Page URL of Login page","Open the Application URL 
@@ -122,11 +122,12 @@ Page Title and Page URL of Login page","Open the Application URL
 supported Browser",-,Not Applicable,"Proper Page Heading, Page 
 URL and Page Title should be displayed","Proper Page Heading, Page 
 URL and Page Title displayed",pass
-TC_LF_018,Login Functionality,"Validate the presence of elements like 
+TC_LF_015,Login Functionality,"Validate the presence of elements like 
 input fields,eye icon enabled or not","Open the Application URL 
 (https://dev-dash.janitri.in) in any 
 supported Browser",-,Not Applicable,"Input fields,eye icon should be enabled","Input fields,eye icon enabled",pass
-TC_LF_019,Login Functionality,"Validate login button is disabled when 
+
+TC_LF_016,Login Functionality,"Validate login button is disabled when 
 input fields are empty","Open the Application URL 
 (https://dev-dash.janitri.in) in any 
 supported Browser","1. Don't enter anything into the User ID field
