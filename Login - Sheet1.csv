@@ -1,0 +1,134 @@
+Test Case ID,Test Scenario,Test Case Description,Pre-Conditions,Test Steps,Test Data,Expected Result,Actual Result,Status
+TC_LF_001,Login Functionality," 
+Validate logging into the Application using 
+valid credentials","1. Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser
+2. Login credentials for an existing 
+account are required","1. Enter valid User ID into the User ID field
+2. Enter valid password into the password field
+3. Click on Login button","Valid User ID,Password",User should be logged into the Application,User logged in into the the Application,pass
+TC_LF_002,Login Functionality,"Validate logging into the Application using 
+invalid credentials (i.e. Invalid User ID and 
+Invalid Password)","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Enter invalid User ID into the User ID field
+2. Enter invalid password into the password field
+3. Click on Login button","Invalid User ID,Password
+eg:user id:manisha
+password:xxxxxxxx",Warning message,Warning message like invalid credentials,pass
+TC_LF_003,Login Functionality,"Validate logging into the Application using 
+invalid User ID and valid Password","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+","1. Enter invalid User ID into the User ID field
+2. Enter valid password into the password field
+3. Click on Login button","Invalid user id:manisha
+valid password:xxxxxxxx",Warning message,Warning message like invalid credentials,pass
+TC_LF_004,Login Functionality,"Validate logging into the Application using 
+valid User ID and invalid Password","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Enter valid User ID into the User ID field
+2. Enter invalid password into the password field
+3. Click on Login button","Valid user id:manisha
+Invalid password:xxxxxxxx",Warning message,Warning message like invalid credentials,pass
+TC_LF_005,Login Functionality,"Validate logging into the Application 
+without providing any credentials","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Don't enter anything into the User ID field
+2. Don't enter anything into the password field
+3. Click on Login button",Not Applicable,Warning message or Login button disable,Warning message like invalid credentials,pass
+TC_LF_006,Login Functionality,"Validate 'Forgotten Password' link is 
+available in the Login page","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser",`,Not Applicable,"Forgotten Password' link should be displayed 
+in the page","Not forgot password link is available in 
+the page",fail
+TC_LF_007,Login Functionality,"Validate logging into the Application using 
+Keyboard keys (Tab and Enter)","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Press Tab keyboard key until the control comes 
+to the User ID text field and enter the valid User ID
+4. Press Tab keyboard key to move the control to 
+Password text field and enter the valid password
+5. Press Tab keyboard key until the control comes 
+'Login' button and press 'Enter' key to submit)",Not Applicable,User should be able to navigate between fields,User navigated between fields,pass
+TC_LF_008,Login Functionality,"Validate User ID and Password 
+text fields in the Login page have the 
+place holder text ","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser",-,Not Applicable,"Proper place holder text should be displayed 
+inside the 'User ID' and 'Password' text fields","Proper place holder text displayed 
+inside the 'User ID' and 'Password' text 
+fields",pass
+TC_LF_010,Login Functionality,"Validate the number of unsucessful login 
+attemps","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Enter invalid User ID into the User ID field
+2. Enter invalid password into the password field
+3. Click on Login button
+4. Repeat step 1 to step 3 multiple times","Invalid User ID,Password
+eg:user id:manisha
+password:xxxxxxxx","Warning message with the text ' Warning: 
+Your account has exceeded allowed number 
+of login attempts. Please try again after some 
+time",-,-
+TC_LF_011,Login Functionality,Validate the text into the Password field is toggled to hide its visibility,"Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser",Enter any text into the 'Password' field,passwod:xxxxxxxxxx,"Text entered into the Password field should be 
+toggled to hide its visibility (i.e. Instead of 
+entered characters getting dispalyed, the 
+Password field should show either * or . 
+Symbols)","Text entered into the Password field 
+toggled to hide its visibility",pass
+TC_LF_012,Login Functionality,"Validate the copying of the text entered 
+into the Password field","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Enter any text into the 'Password' field
+2. Select the text entered into the 'Password' field, 
+right click to select 'Copy' option
+3. Select the text entered into the 'Password' field 
+and press (Ctrl+C) shorcut for copying",passwod:xxxxxxxxxx,"1. Copy option in the Right click menu should 
+be disabled
+2. Password text should not be copied","Copy option in the Right click menu 
+disabled",pass
+TC_LF_013,Login Functionality," 
+ 	
+Validate the Password is not visible in the 
+Page Source","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Enter any text into the 'Password' field
+2. Inspect the Password text field
+3. Click on 'Login' button and inspect the Password 
+text field",Not Applicable,"Password text should not be visible in the 
+Page source","Password text visible in the 
+Page source",fail
+TC_LF_016,Login Functionality," 
+ 	
+Validate timeout of the Login Session","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Enter valid User ID into the 'User ID' field
+2. Enter valid password into the 'Password' field
+3. Click on 'Login' button
+4. Wait for more than 30 minutes without performing 
+anything on the Application
+5. Perform any action on the Application",Not Applicable,"User should get automatically logged out 
+with a proper message stating your session 
+got expired",-,-
+TC_LF_017,Login Functionality," 
+         
+Validate the Page Heading, 
+Page Title and Page URL of Login page","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser",-,Not Applicable,"Proper Page Heading, Page 
+URL and Page Title should be displayed","Proper Page Heading, Page 
+URL and Page Title displayed",pass
+TC_LF_018,Login Functionality,"Validate the presence of elements like 
+input fields,eye icon enabled or not","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser",-,Not Applicable,"Input fields,eye icon should be enabled","Input fields,eye icon enabled",pass
+TC_LF_019,Login Functionality,"Validate login button is disabled when 
+input fields are empty","Open the Application URL 
+(https://dev-dash.janitri.in) in any 
+supported Browser","1. Don't enter anything into the User ID field
+2. Don't enter anything into the password field
+",Not Applicable,Login button should be disabled,Login button enabled,fail
